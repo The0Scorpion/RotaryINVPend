@@ -3,7 +3,7 @@ r_a = 0.1345; %arm length in m
 l_p = 0.132; % length of arm of pendulum in m
 J_pendulum = (1/3)*m_p*l_p*l_p;
 motor_j = 0.0327;
-motor_b = 0.29352; 
+motor_b = 0.029352; 
 m_k = 0.052233; %back emf const
 m_resistance = 1.20677778;
 J_arm = motor_j;
@@ -23,17 +23,26 @@ H = (motor_efficiency*gearbox_efficiency*m_k*gearbox_ratio)/(m_resistance*e);
 
 A_mat = [0 0 1 0;0 0 0 1;0 (b*d)/(e) (-(c*G)/e) 0 ; 0 ((a*d)/e) (-b*G)/e 0 ];
 B_mat = [0;0; (c)*(H);(b)*(H)];
-C_mat = [1 0 0 0 ; 0 1 0 0];
+C_mat = [0 1 0 0];
 
 state_space_model= ss(A_mat,B_mat,C_mat,0);
  
 q = diag([2 1 90 50]);
-r_eq = 30;
+r_eq = 1;
 ctrb(state_space_model);
 [K,S_LQ,eig]=lqr(state_space_model,q,r_eq,0);
 syslqr=ss(A_mat-B_mat*K,B_mat,C_mat,0);
 PWMBias =35;
 PWMSat =255;
+Reset=0;
+uDist=0;
+yDist=0;
 display(K);
+% [b,a]=ss2tf(A_mat-K*B_mat,B_mat,C_mat,[0]);
+% N = 50;
+% u = [1 zeros(1,N-1)];
+% G=filter(b,a,u)
+%Syp=feedback(1,G);
+%bode(Syp)
 step(syslqr);
 

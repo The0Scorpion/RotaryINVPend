@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm_rtp_registry/R2023a">
+  <slsa.mm.rtpregistry.ModelMetadata type="slsa.mm.rtpregistry.ModelMetadata" uuid="47744e1e-c784-4daa-a1e3-9095df3b3967">
+    <modelName>LastWorkingModel</modelName>
+  </slsa.mm.rtpregistry.ModelMetadata>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="3cf565bb-84f0-4f1a-8874-ef5162a1a106">
+    <id type="slsa.mm.rtpregistry.VariableId" uuid="fb1981e5-e34c-4825-b947-5c03884e0d8c"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="82a16583-8469-4c09-b0c4-eb901ce0f77c"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="ac9bad79-1bad-451e-9c90-7bd7b826f1e8">
+    <id type="slsa.mm.rtpregistry.VariableId" uuid="4b4c5d4b-735b-473b-903f-594c3505ebbd"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="1b96043e-e49c-43f1-863d-40c9edae7e80"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="fb1981e5-e34c-4825-b947-5c03884e0d8c">
+    <workspaceName>global-workspace</workspaceName>
+    <name>PWMBias</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="3cf565bb-84f0-4f1a-8874-ef5162a1a106"/>
+  </slsa.mm.rtpregistry.VariableId>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="bbac8e9d-3cf9-48d0-8887-3ec4f44be021">
+    <id type="slsa.mm.rtpregistry.VariableId" uuid="aed45405-522b-4e7b-badd-5099f5d1f1b9"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="c150f4f9-6263-4ddf-9e0d-8f956f7554b9"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="1b96043e-e49c-43f1-863d-40c9edae7e80">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="ac9bad79-1bad-451e-9c90-7bd7b826f1e8"/>
+    <valueIndices>0</valueIndices>
+    <valueIndices>3</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="4b4c5d4b-735b-473b-903f-594c3505ebbd">
+    <workspaceName>global-workspace</workspaceName>
+    <name>K</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="ac9bad79-1bad-451e-9c90-7bd7b826f1e8"/>
+  </slsa.mm.rtpregistry.VariableId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="82a16583-8469-4c09-b0c4-eb901ce0f77c">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="3cf565bb-84f0-4f1a-8874-ef5162a1a106"/>
+    <valueIndices>4</valueIndices>
+    <valueIndices>4</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="aed45405-522b-4e7b-badd-5099f5d1f1b9">
+    <workspaceName>global-workspace</workspaceName>
+    <name>PWMSat</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="bbac8e9d-3cf9-48d0-8887-3ec4f44be021"/>
+  </slsa.mm.rtpregistry.VariableId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="c150f4f9-6263-4ddf-9e0d-8f956f7554b9">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="bbac8e9d-3cf9-48d0-8887-3ec4f44be021"/>
+    <valueIndices>5</valueIndices>
+    <valueIndices>5</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+</MF0>
