@@ -32,7 +32,7 @@ r_eq = 1;
 ctrb(state_space_model);
 [K,S_LQ,eig]=lqr(state_space_model,q,r_eq,0);
 syslqr=ss(A_mat-B_mat*K,B_mat,C_mat,0);
-PWMBias =35;
+PWMBias =33;
 PWMSat =255;
 Reset=0;
 uDist=0;
@@ -44,5 +44,4 @@ display(K);
 % G=filter(b,a,u)
 %Syp=feedback(1,G);
 %bode(Syp)
-step(syslqr);
 
